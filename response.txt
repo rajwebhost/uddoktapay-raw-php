@@ -1,0 +1,1 @@
+{"full_name":"John Doe","email":"someone@gmail.com","amount":"50","invoice_id":"up123rt","metadata":{"invoice_id":"10"},"payment_method":"bkash","sender_number":"123456789","transaction_id":"azusd346","status":"COMPLETED"}
