@@ -5,9 +5,9 @@ This is a simple RAW PHP checkout example of Uddoktapay.
 
 We have added Sandbox API KEY & Sandbox URL in this example file.
 
-NOTE: 
-API V1 => All response will send into webhook url with REST API CALL.
-API V2 => All response will send into success url with POST Method.
+### NOTE: 
+#### API V1 => All response will send into webhook url with REST API CALL.
+#### API V2 => All response will send into success url with POST Method.
 
 # API V1
 
