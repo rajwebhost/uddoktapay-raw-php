@@ -9,7 +9,7 @@ We have added Sandbox API KEY & Sandbox URL in this example file.
 #### API V1 => All response will send into webhook url with REST API CALL.
 #### API V2 => All response will send into success url with POST Method.
 
-# API V1
+# API V1 Documents
 
 ## Step 1: Create Charge API v1
 
@@ -66,19 +66,7 @@ $data = UPAPI::execute_payment();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# API V2
+# API V2 Documents
 
 ## Step 1: Create Charge API v2
 
