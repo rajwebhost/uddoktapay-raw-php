@@ -100,7 +100,21 @@ $response = UPAPI::create_payment($data);
 ## Step 2: Complete Payment
 
 
+## Step 3: Get Response & Verify Payment
 
+Here you will get succeess response into $data variable.
+
+```bash
+UPAPI::init('982d381360a69d419689740d9f2e26ce36fb7a50', 'https://sandbox.uddoktapay.com/api/checkout-v2');
+
+$data = UPAPI::execute_payment_v2();
+```
+
+## API V2 Success Response Example:
+
+```bash
+{"full_name":"John Doe","email":"someone@gmail.com","amount":"50","invoice_id":"up123rt","metadata":{"invoice_id":"10"},"payment_method":"bkash","sender_number":"123456789","transaction_id":"azusd346","status":"COMPLETED"}
+```
 
 
 Enjoy
