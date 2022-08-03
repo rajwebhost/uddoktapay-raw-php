@@ -9,6 +9,8 @@ We have added Sandbox API KEY & Sandbox URL in this example file.
 
 ## Step 1: Create Charge API v1
 
+Here you will get charge response into $response variable.
+
 ```bash
 UPAPI::init('982d381360a69d419689740d9f2e26ce36fb7a50', 'https://sandbox.uddoktapay.com/api/checkout');
 
@@ -29,7 +31,7 @@ $response = UPAPI::create_payment($data);
 ```
 
 
-## API V1 Response Example:
+## API V1 Charge Response Example:
 
 ```bash
 [ 
@@ -43,6 +45,8 @@ $response = UPAPI::create_payment($data);
 ## Step 2: Complete Payment
 
 ## Step 3: Get Response & Verify Payment
+
+Here you will get webhook response into $data variable.
 
 ```bash
 UPAPI::init('982d381360a69d419689740d9f2e26ce36fb7a50', 'https://sandbox.uddoktapay.com/api/checkout');
