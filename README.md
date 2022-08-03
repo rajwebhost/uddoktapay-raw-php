@@ -5,13 +5,10 @@ This is a simple RAW PHP checkout example of Uddoktapay.
 
 We have added Sandbox API KEY & Sandbox URL in this example file.
 
-Step 1: Create Charge
+Step 1: Create Charge API v1
 
 ```bash
-UPAPI::init('982d381360a69d419689740d9f2e26ce36fb7a50', 'https://sandbox.uddoktapay.com/api/checkout-v2');
-
-// API V1 = https://sandbox.uddoktapay.com/api/checkout
-// API V2 = https://sandbox.uddoktapay.com/api/checkout-v2
+UPAPI::init('982d381360a69d419689740d9f2e26ce36fb7a50', 'https://sandbox.uddoktapay.com/api/checkout');
 
 $data = [
     'amount' => '100',
@@ -27,8 +24,19 @@ $data = [
 
 $response = UPAPI::create_payment($data);
 
-
 ```
+
+
+API V1 Response Example:
+```bash
+[ 
+    ["status"]        => "true",
+    ["message"]       =>  "Payment Url",
+    ["payment_url"]   => "https://sandbox.uddoktapay.com/payment/2630d8541026333dd3d186eccba0604da6cb5f40" 
+]
+```
+
+
 
 Step 2: Complete Payment
 
