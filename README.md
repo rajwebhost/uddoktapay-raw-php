@@ -60,5 +60,47 @@ $data = UPAPI::execute_payment();
 ```
 
 
+# API V2
+
+## Step 1: Create Charge API v2
+
+Here you will get charge response into $response variable.
+
+```bash
+UPAPI::init('982d381360a69d419689740d9f2e26ce36fb7a50', 'https://sandbox.uddoktapay.com/api/checkout-v2');
+
+$data = [
+    'amount' => '100',
+    'full_name' => 'John Doe',
+    'email' => 'test@test.com',
+    'metadata' => [
+        'order_id' => 10
+    ],
+    'redirect_url' => 'http://localhost/success_v2.php',
+    'cancel_url' => 'http://localhost/cancel.php',
+    'webhook_url' => 'http://localhost/webhook.php', // optional
+];
+
+$response = UPAPI::create_payment($data);
+
+```
+
+
+## API V2 Charge Response Example:
+
+```bash
+[ 
+    ["status"]          => "true",
+    ["message"]         =>  "Payment Url",
+    ["payment_url"]     => "https://sandbox.uddoktapay.com/payment/2630d8541026333dd3d186eccba0604da6cb5f40" 
+]
+```
+
+
+## Step 2: Complete Payment
+
+
+
+
 
 Enjoy
