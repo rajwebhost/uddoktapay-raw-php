@@ -5,6 +5,10 @@ This is a simple RAW PHP checkout example of Uddoktapay.
 
 We have added Sandbox API KEY & Sandbox URL in this example file.
 
+NOTE: 
+API V1 => All response will send into webhook url with REST API CALL.
+API V2 => All response will send into success url with POST Method.
+
 # API V1
 
 ## Step 1: Create Charge API v1
@@ -58,6 +62,20 @@ $data = UPAPI::execute_payment();
 ```bash
 {"full_name":"John Doe","email":"someone@gmail.com","amount":"50","invoice_id":"up123rt","metadata":{"invoice_id":"10"},"payment_method":"bkash","sender_number":"123456789","transaction_id":"azusd346","status":"COMPLETED"}
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # API V2
