@@ -113,7 +113,21 @@ $data = UPAPI::execute_payment_v2();
 ## API V2 Success Response Example:
 
 ```bash
-{"full_name":"John Doe","email":"someone@gmail.com","amount":"50","invoice_id":"up123rt","metadata":{"invoice_id":"10"},"payment_method":"bkash","sender_number":"123456789","transaction_id":"azusd346","status":"COMPLETED"}
+[
+    ['full_name'] => 'John Doe',
+    ['email'] => 'test@test.com',
+    ['amount'] => 100.00,
+    ['charged_amount'] => 100.00,
+    ['invoice_id'] => 'C5dZ9m7dn4TQrSWNXSwe',
+    ['metadata'] => [
+            ['order_id'] => 10
+    ]
+    ['payment_metho'd] => 'bkash',
+    ['sender_number'] => '12345678900',
+    ['transaction_id'] => 'UDDOKTAPAY',
+    ['date'] => '2022-08-03 21:51:13',
+    ['status'] => 'COMPLETED'
+ ]
 ```
 
 
